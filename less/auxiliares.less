@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Open+Sans:wght@400;700&display=swap');
+
+// classes auxiliares
+html body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.logo() {
+    font-size: 2rem;
+    font-family: 'Eczar', serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 1;
+    text-align: center;
+}
+
+.ul() {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &:hover {
+        color: #0e76a8;
+    }
+}
+
+.mobile() {
+    width: 100%;
+    background-color: @bg-cor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+
+    @media screen and (max-width: 914px) {
+        display: block;
+    }
+}
+
+// cores
+@bg-cor: #2d2d2d;
+@text-cor-black: #000;
+@text-cor-white: #fff;
+@cor-destaq: #f6b40d;
+
+// cores icons sociais
+@whats: #a4c639;
+@github: #fff;
+@linkedin: #0e76a8;
+@instagram: #c13584;
