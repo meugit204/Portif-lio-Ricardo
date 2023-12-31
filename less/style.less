@@ -354,24 +354,110 @@ footer {
         width: 100%;
         background-color: #2d2d2d;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
 
         .logo {
-            padding: 20px 0;
+            width: 33.3%;
 
             a {
                 .logo();
             }
+
+            @media screen and (max-width: 914px) {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        .footer__icons {
+            width: 33.3%;
+
+            h2 {
+                width: 100%;
+                color: @text-cor-white;
+                font-size: 1em;
+
+                @media screen and (max-width: 914px) {
+                    text-align: right;
+                }
+
+                @media screen and (max-width: 345px) {
+                    font-size: 0.8em;
+                }
+            }
+
+            .icons {
+                width: 100%;
+                display: flex;
+                gap: 1rem;
+                padding-top: 10px;
+
+                i {
+                    font-size: 30px;
+                    height: 30px;
+                    flex-shrink: 0;
+                    color: #fff;
+                    cursor: pointer;
+                    display: block;
+                }
+
+                .whatssap {
+                    i {
+                        color: @whats;
+                    }
+                }
+
+                .linkedin {
+                    i {
+                        color: @linkedin;
+                    }
+                }
+
+                .github {
+                    i {
+                        color: @github;
+                    }
+                }
+
+                .instagram {
+                    i {
+                        color: @instagram;
+                    }
+                }
+
+                @media screen and (max-width: 914px) {
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+
+            @media screen and (max-width: 914px) {
+                width: 50%;
+            }
         }
 
         .menu-footer {
+            width: 33.3%;
+
+            h2 {
+                color: @text-cor-white;
+                font-size: 1rem;
+            }
+
             ul {
                 display: flex;
-                gap: 5rem;
+                flex-direction: column;
+                padding-top: 10px;
+
+                li {
+                    padding-bottom: 10px
+                }
 
                 a {
                     .ul();
+                    font-weight: lighter;
                 }
             }
 
@@ -379,15 +465,22 @@ footer {
                 display: none;
             }
         }
+
+        @media screen and (max-width: 914px) {
+            justify-content: space-around;
+            padding-top: 10px;
+        }
     }
 
     .footer__direitos {
-        display: flex;
-        justify-content: center;
-        padding: 20px 0 10px 0;
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 10px 0;
 
-        p {
-            color: @text-cor-white;
+            p {
+                color: @text-cor-white;
+            }
         }
     }
 }
