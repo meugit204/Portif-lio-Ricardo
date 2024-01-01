@@ -101,20 +101,31 @@ header>.container {
             position: absolute;
             left: 0;
             width: 100%;
-            padding: 70px 0 30px 0;
+            padding: 40px 0 40px 0;
             top: 84px;
-            background-color: @bg-cor;
+            background-color: #fff;
             display: none;
             text-align: center;
+            border-bottom: 2px solid #ccc;
         }
 
         li {
             margin-bottom: 30px;
+
         }
 
         a {
-            color: @text-cor-white;
+            color: @text-cor-black;
             letter-spacing: 4px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 2px;
+                background-color: #21638f;
+                margin: 0 auto;
+            }
         }
 
         padding: 0;
@@ -186,14 +197,21 @@ header>.container {
                         font-size: 3rem;
                     }
 
-                    @media screen and (max-width: 394px) {
+                    @media screen and (max-width: 401px) {
                         font-size: 2rem;
+                    }
 
+                    @media screen and (max-width: 285px) {
+                        font-size: 1.5rem;
                     }
                 }
 
                 @media screen and (max-width: 394px) {
                     letter-spacing: 0.6rem;
+                }
+
+                @media screen and (max-width: 285px) {
+                    letter-spacing: 0.3rem;
                 }
             }
 
@@ -243,18 +261,22 @@ header>.container {
                     font-size: 1.8rem;
                 }
 
-                @media screen and (max-width: 458px) {
+                @media screen and (max-width: 469px) {
                     font-size: 1.5rem;
                 }
 
                 @media screen and (max-width: 394px) {
                     font-size: 1.2rem;
+                }
 
+                @media screen and (max-width: 314px) {
+                    font-size: 1rem;
                 }
             }
 
             @media screen and (max-width: 914px) {
                 width: 100%;
+                padding: 0 1%;
             }
         }
 
@@ -278,8 +300,8 @@ header>.container {
                 display: inline-block;
                 text-decoration: none;
                 width: 180px;
-                height: 40px;
-                line-height: 40px;
+                height: 45px;
+                line-height: 45px;
                 text-align: center;
                 background-color: #3498db;
                 font-size: 1rem;
@@ -337,7 +359,7 @@ header>.container {
     p {
         color: #838181;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: lighter;
         line-height: normal;
@@ -378,6 +400,7 @@ footer {
                 width: 100%;
                 color: @text-cor-white;
                 font-size: 1em;
+                text-align: center;
 
                 @media screen and (max-width: 914px) {
                     text-align: right;
@@ -391,6 +414,7 @@ footer {
             .icons {
                 width: 100%;
                 display: flex;
+                justify-content: center;
                 gap: 1rem;
                 padding-top: 10px;
 
@@ -444,20 +468,23 @@ footer {
             h2 {
                 color: @text-cor-white;
                 font-size: 1rem;
+                text-align: right;
             }
 
             ul {
                 display: flex;
                 flex-direction: column;
                 padding-top: 10px;
+                align-items: flex-end;
 
                 li {
-                    padding-bottom: 10px
+                    padding-bottom: 10px;
                 }
 
                 a {
                     .ul();
                     font-weight: lighter;
+
                 }
             }
 
@@ -476,10 +503,19 @@ footer {
         .container {
             display: flex;
             justify-content: center;
-            padding: 20px 0 10px 0;
+            padding: 0px 0 10px 0;
 
             p {
                 color: @text-cor-white;
+
+                @media screen and (max-width: 914px) {
+                    font-size: 14px;
+                }
+            }
+
+            @media screen and (max-width: 914px) {
+                padding: 20px 0 10px 0;
+
             }
         }
     }

@@ -143,18 +143,27 @@ header > .container .mobile ul {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 70px 0 30px 0;
+  padding: 40px 0 40px 0;
   top: 84px;
-  background-color: #2d2d2d;
+  background-color: #fff;
   display: none;
   text-align: center;
+  border-bottom: 2px solid #ccc;
 }
 header > .container .mobile li {
   margin-bottom: 30px;
 }
 header > .container .mobile a {
-  color: #ffffff;
+  color: #000000;
   letter-spacing: 4px;
+}
+header > .container .mobile a::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #21638f;
+  margin: 0 auto;
 }
 @media screen and (max-width: 914px) {
   header > .container {
@@ -219,14 +228,24 @@ header > .container .mobile a {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 401px) {
   .perfil .container .perfil__box2 h1 b {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 285px) {
+  .perfil .container .perfil__box2 h1 b {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 394px) {
   .perfil .container .perfil__box2 h1 {
     letter-spacing: 0.6rem;
+  }
+}
+@media screen and (max-width: 285px) {
+  .perfil .container .perfil__box2 h1 {
+    letter-spacing: 0.3rem;
   }
 }
 .perfil .container .perfil__box2 .dev {
@@ -270,7 +289,7 @@ header > .container .mobile a {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 469px) {
   .perfil .container .perfil__box2 .dev {
     font-size: 1.5rem;
   }
@@ -280,9 +299,15 @@ header > .container .mobile a {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 314px) {
+  .perfil .container .perfil__box2 .dev {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 914px) {
   .perfil .container .perfil__box2 {
     width: 100%;
+    padding: 0 1%;
   }
 }
 .perfil .container .perfil__sobre p {
@@ -302,8 +327,8 @@ header > .container .mobile a {
   display: inline-block;
   text-decoration: none;
   width: 180px;
-  height: 40px;
-  line-height: 40px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
   background-color: #3498db;
   font-size: 1rem;
@@ -360,7 +385,7 @@ header > .container .mobile a {
 .linguagens p {
   color: #838181;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: lighter;
   line-height: normal;
@@ -403,6 +428,7 @@ footer .container .footer__icons h2 {
   width: 100%;
   color: #ffffff;
   font-size: 1em;
+  text-align: center;
 }
 @media screen and (max-width: 914px) {
   footer .container .footer__icons h2 {
@@ -417,6 +443,7 @@ footer .container .footer__icons h2 {
 footer .container .footer__icons .icons {
   width: 100%;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   padding-top: 10px;
 }
@@ -457,11 +484,13 @@ footer .container .menu-footer {
 footer .container .menu-footer h2 {
   color: #ffffff;
   font-size: 1rem;
+  text-align: right;
 }
 footer .container .menu-footer ul {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  align-items: flex-end;
 }
 footer .container .menu-footer ul li {
   padding-bottom: 10px;
@@ -494,8 +523,18 @@ footer .container .menu-footer ul a:hover {
 footer .footer__direitos .container {
   display: flex;
   justify-content: center;
-  padding: 20px 0 10px 0;
+  padding: 0px 0 10px 0;
 }
 footer .footer__direitos .container p {
   color: #ffffff;
+}
+@media screen and (max-width: 914px) {
+  footer .footer__direitos .container p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 914px) {
+  footer .footer__direitos .container {
+    padding: 20px 0 10px 0;
+  }
 }
