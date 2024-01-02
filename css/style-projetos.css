@@ -233,7 +233,7 @@ header > .container .mobile a::after {
   font: lighter;
 }
 .projetos .container .meus-projetos .card__projetos .card__sobre a {
-  color: #2d2d2d;
+  color: #6a7c92;
   padding: 6px 10px;
   display: inline-block;
   border: 1px solid #3498db;
@@ -241,11 +241,81 @@ header > .container .mobile a::after {
   margin: 20px 10px 0 0;
   font-size: 14px;
 }
+.projetos .container .meus-projetos .card__projetos .card__sobre a:hover {
+  background-color: #3498db;
+  color: #ffffff;
+  transition: 0.8s all;
+}
 @media screen and (max-width: 961px) {
   .projetos .container .meus-projetos .card__projetos {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+  }
+}
+.projetos .projeto__destaque {
+  margin-top: 40px;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #2d2d2d;
+  padding: 20px 0;
+}
+.projetos .projeto__destaque .box1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projetos .projeto__destaque .box1 img {
+  width: 80%;
+}
+@media screen and (max-width: 683px) {
+  .projetos .projeto__destaque .box1 img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 683px) {
+  .projetos .projeto__destaque .box1 {
+    width: 80%;
+  }
+}
+.projetos .projeto__destaque .box2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projetos .projeto__destaque .box2 h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.projetos .projeto__destaque .box2 h2 b {
+  color: #3498db;
+}
+.projetos .projeto__destaque .box2 p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 20px 0;
+  max-width: 500px;
+}
+@media screen and (max-width: 683px) {
+  .projetos .projeto__destaque .box2 p {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 683px) {
+  .projetos .projeto__destaque .box2 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 683px) {
+  .projetos .projeto__destaque {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 footer {
