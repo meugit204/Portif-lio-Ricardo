@@ -176,7 +176,7 @@ header > .container .mobile a::after {
   }
 }
 main {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 main .container {
   padding: 0 5px;
@@ -189,7 +189,7 @@ main .container .projetos__title h1 {
   line-height: normal;
   text-align: center;
 }
-@media screen and (max-width: 331px) {
+@media screen and (max-width: 332px) {
   main .container .projetos__title h1 {
     font-size: 2rem;
   }
@@ -202,32 +202,37 @@ main .container .projetos__title p {
   line-height: normal;
 }
 main .container .projetos__container {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 main .container .projetos__container .projetos__box1 {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   margin-top: 40px;
+  padding: 0 2%;
 }
 main .container .projetos__container .projetos__box1 .projetos__card {
-  width: 400px;
+  width: 350px;
   height: 550px;
   border-radius: 10px;
   border: 1px solid #CCC;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
 }
 main .container .projetos__container .projetos__box1 .projetos__card .card__img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1.77777778;
 }
 main .container .projetos__container .projetos__box1 .projetos__card .card__img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 main .container .projetos__container .projetos__box1 .projetos__card .card__sobre {
   margin-top: 20px;
-  padding: 0 2%;
+  padding: 0 4%;
 }
 main .container .projetos__container .projetos__box1 .projetos__card .card__sobre h2 {
   color: #000;
@@ -264,65 +269,46 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__sobr
   font-weight: 300;
   line-height: normal;
 }
-@media screen and (max-width: 357px) {
-  main .container .projetos__container .projetos__box1 .projetos__card .card__sobre {
-    margin-top: 0;
-  }
-}
 main .container .projetos__container .projetos__box1 .projetos__card .card__btn {
   width: 100%;
-  padding: 0 2%;
+  padding: 0 4%;
   display: flex;
   gap: 2rem;
   margin-top: 30px;
 }
 main .container .projetos__container .projetos__box1 .projetos__card .card__btn a {
-  width: 150px;
-  height: 45px;
-  line-height: 45px;
-  border-radius: 10px;
   overflow: hidden;
-  background: #1F34F9;
   display: inline-block;
-  color: #ffffff;
+  color: #1F34F9;
   font-size: 20px;
   text-align: center;
 }
-@media screen and (max-width: 1112px) {
-  main .container .projetos__container .projetos__box1 .projetos__card {
-    width: 320px;
-    height: 610px;
+main .container .projetos__container .projetos__box1 .projetos__card .card__btn a::after {
+  content: '';
+  display: block;
+  width: 110px;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+@media screen and (max-width: 310px) {
+  main .container .projetos__container .projetos__box1 .projetos__card .card__btn a {
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 998px) {
-  main .container .projetos__container .projetos__box1 .projetos__card {
-    width: 300px;
-    height: 610px;
+@media screen and (max-width: 934px) {
+  main .container .projetos__container .projetos__box1 .projetos__card .card__btn {
+    padding: 30px 4%;
   }
 }
-@media screen and (max-width: 935px) {
-  main .container .projetos__container .projetos__box1 .projetos__card {
-    width: 400px;
-    height: 550px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 934px) {
   main .container .projetos__container .projetos__box1 .projetos__card {
     width: 100%;
+    height: auto;
+    margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 350px) {
-  main .container .projetos__container .projetos__box1 .projetos__card {
-    height: 600px;
-  }
-}
-@media screen and (max-width: 294px) {
-  main .container .projetos__container .projetos__box1 .projetos__card {
-    height: 650px;
-  }
-}
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 934px) {
   main .container .projetos__container .projetos__box1 {
     flex-direction: column;
     align-items: center;
@@ -330,15 +316,12 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
 }
 .projetos__box2 {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .projetos__box2 .card__destaque {
   width: 100%;
   height: 400px;
-  background: rgba(217, 217, 217, 0);
-  border-radius: 10px;
-  border: 1px solid #CCC;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(203, 203, 203, 0.896);
   display: flex;
 }
 .projetos__box2 .card__destaque .box1 {
@@ -349,14 +332,14 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
 .projetos__box2 .card__destaque .box1::before {
   content: '';
   display: block;
-  background-color: #1F34F9;
-  border-radius: 10px 0 0 10px;
+  background-color: #2d2d2d;
   width: 50%;
   height: 100%;
 }
 .projetos__box2 .card__destaque .box1 .box__img {
   width: 80%;
-  height: 300px;
+  aspect-ratio: 1.77777778;
+  object-fit: cover;
   background-image: url(../imagens/projeto01.png);
   background-size: 100% 100%;
   background-position: center;
@@ -367,52 +350,14 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
   border: 1px solid #CCC;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 1064px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 250px;
-  }
-}
-@media screen and (max-width: 906px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 837px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 300px;
-    position: static;
-    transform: translate(0, 0);
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 679px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 250px;
-  }
-}
-@media screen and (max-width: 513px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 878px) {
   .projetos__box2 .card__destaque .box1 .box__img {
     width: 100%;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
+    position: static;
+    transform: translate(0, 0);
   }
 }
-@media screen and (max-width: 313px) {
-  .projetos__box2 .card__destaque .box1 .box__img {
-    height: 150px;
-  }
-}
-@media screen and (max-width: 712px) {
-  .projetos__box2 .card__destaque .box1 {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 837px) {
+@media screen and (max-width: 878px) {
   .projetos__box2 .card__destaque .box1 {
     width: 100%;
   }
@@ -423,7 +368,7 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
   padding: 40px 5px 30px 5px;
 }
 .projetos__box2 .card__destaque .box2 h2 {
-  color: #1F34F9;
+  color: #2d2d2d;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -435,7 +380,7 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
   display: block;
   width: 140px;
   height: 3px;
-  background-color: #ccc;
+  background-color: #585757;
   margin: 0 auto;
 }
 .projetos__box2 .card__destaque .box2 p {
@@ -445,15 +390,43 @@ main .container .projetos__container .projetos__box1 .projetos__card .card__btn 
   max-width: 480px;
   margin: 0 auto;
 }
-@media screen and (max-width: 837px) {
+.projetos__box2 .card__destaque .box2 .destaque__btn {
+  margin: 30px auto 0 auto;
+  max-width: 480px;
+}
+.projetos__box2 .card__destaque .box2 .destaque__btn a {
+  overflow: hidden;
+  display: inline-block;
+  color: #1F34F9;
+  font-size: 20px;
+  padding: 0px 10px 0 10px;
+}
+.projetos__box2 .card__destaque .box2 .destaque__btn a::after {
+  content: '';
+  display: block;
+  width: 110px;
+  height: 2px;
+  background-color: #585757;
+  margin: 0 auto;
+}
+@media screen and (max-width: 284px) {
+  .projetos__box2 .card__destaque .box2 .destaque__btn a::after {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 284px) {
+  .projetos__box2 .card__destaque .box2 .destaque__btn a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 878px) {
   .projetos__box2 .card__destaque .box2 {
     width: 100%;
   }
 }
-@media screen and (max-width: 837px) {
+@media screen and (max-width: 878px) {
   .projetos__box2 .card__destaque {
-    height: 100%;
-    display: flex;
+    height: auto;
     flex-direction: column;
   }
 }
