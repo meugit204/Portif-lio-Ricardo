@@ -10,7 +10,7 @@
     <title>Ricardo Vieira - Portifólio</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style-contato.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <!-- icon -->
@@ -49,53 +49,42 @@
             </div><!--header__icons-->
         </div><!--container-->
     </header><!--header-->
-    <main class="perfil">
+    <section class="bg-contato">
+        <div class="opc"></div><!--cria div para escurer a imagem de fundo-->
         <div class="container">
-            <div class="perfil__box1">
-                <img src="imagens/img-perfil.png" alt="imagem de perfil de ricardo vieira">
-            </div><!--perfil__box01-->
-            <div class="perfil__box2">
-                <div class="perfil__title">
-                    <p>Olá, meu nome é</p>
-                    <h1><b>R</b>icardo <b>V</b>ieira</h1>
-                </div><!--perfil__title-->
-                <div class="dev">
-                    <p id="dev" class="typing-text">desenvolvedor front-end<span class="cursor"></span></p>
-                </div><!-- dev | texto com animaçao-->
-                <div class="perfil__sobre">
-                    <p>Me chamo Ricardo Vieira, tenho 28 anos e estou no segundo semestre do curso Superior de
-                        Tecnologia em Desenvolvimento Web pela
-                        Universidade Pitágoras Unopar. Sou apaixonado por criar experiências de usuário incríveis e
-                        responsivas. Tenho
-                        experiência em trabalhar com as tecnologias mais recentes, como HTML, CSS, JavaScript, React,
-                        Bootstrap e outros frameworks populares. Sou capaz de transformar designs em código de alta
-                        qualidade, seguindo as
-                        melhores práticas de desenvolvimento web. Também tenho conhecimentos em ferramentas de teste,
-                        depuração e otimização de desempenho. Estou sempre buscando aprender novas habilidades e me
-                        atualizar sobre as tendências do mercado.</p>
-                </div><!--perfil__sobre-->
-                <div class="perfil__btn">
-                    <div class="btn1">
-                        <a href="Documentos/Ricardo_Vieira.pdf" class="custom-button">
-                            Baixar Curriculo
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                        </a>
-                    </div>
-                    <div class="btn2">
-                        <a href="Projetos.html" class="custom-button">
-                            Meus Projetos
-                            <i class="fa-solid fa-briefcase"></i>
-                        </a>
-                    </div>
-                </div><!--perfil__btn-->
-            </div><!--perfil__box2-->
+            <div class="box__contatos">
+                <!-- localizaçao -->
+                <div class="card__flex">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>São Luis - MA</p>
+                </div>
+                <!-- whatssap -->
+                <div class="card__flex">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>98 98417-8259</p>
+                </div>
+                <!-- email -->
+                <div class="card__flex">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Ricardo.dev.of@gmail.com</p>
+                </div>
+                <!-- horario -->
+                <div class="card__flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>08:00 - 18:00</p>
+                </div>
+            </div><!--box__contatos-->
+            <div class="box__form">
+                <form action="">
+                    <h2>Mande sua Mensagem!</h2>
+                    <input type="text" placeholder="Nome" class="input-field">
+                    <input type="email" placeholder="Email" required class="input-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div><!--box__form-->
         </div><!--container-->
-    </main><!--perfil-->
-    <section class="linguagens">
-        <div class="container">
-            <p>HTML | CSS | Javascript | GIT | GITHUB | Less |React | Node | PHP | ANGULAR | VUE JS</p>
-        </div><!--container-->
-    </section><!--linguagens-->
+    </section><!--contato-->
     <footer>
         <div class="container">
             <div class="logo">
