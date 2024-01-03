@@ -2,6 +2,10 @@
 @import 'reset';
 @import 'auxiliares';
 
+body {
+    background-color: rgb(230, 230, 230);
+}
+
 // header
 header {
     background-color: @bg-cor;
@@ -170,11 +174,11 @@ header>.container {
         .meus-projetos {
             margin-top: 40px;
             display: flex;
-            flex-wrap: wrap;
+            gap: 30px;
 
             .card__projetos {
                 width: 33.3%;
-                border: 20px solid rgb(230, 230, 230);
+                border: 1px solid rgba(224, 224, 224, 0.5);
                 box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
                 background-color: #fff;
                 border-radius: 5px;
@@ -218,16 +222,24 @@ header>.container {
                             color: @text-cor-white;
                             transition: 0.8s all;
                         }
+
+                        @media screen and (max-width:901px) {
+                            padding: 6px 8px;
+                            margin: 20px 8px 0 0;
+                        }
                     }
                 }
 
-                @media screen and (max-width:961px) {
+                @media screen and (max-width:901px) {
                     width: 100%;
                     max-width: 600px;
                     margin: 0 auto;
                 }
             }
 
+            @media screen and (max-width:901px) {
+                flex-direction: column;
+            }
         }
     }
 
@@ -291,6 +303,26 @@ header>.container {
                 width: 80%;
             }
 
+            .box2__btn {
+                display: flex;
+                gap: 40px;
+
+                a {
+                    color: #bccfe6;
+                    padding: 6px 10px;
+                    display: inline-block;
+                    border: 1px solid #3498db;
+                    border-radius: 20px;
+                    margin: 20px 0px 0 0;
+                    font-size: 14px;
+
+                    &:hover {
+                        background-color: #3498db;
+                        color: @text-cor-white;
+                        transition: 0.8s all;
+                    }
+                }
+            }
         }
 
         @media screen and (max-width:683px) {
