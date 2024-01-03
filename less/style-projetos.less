@@ -342,6 +342,114 @@ header>.container {
     }
 }
 
+// Chamada
+.chamada {
+    width: 100%;
+    background-color: #fff;
+    height: 300px;
+    display: flex;
+    padding: 20px 0;
+    margin-top: 40px;
+
+    .box1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .custom-button {
+            .btn-icone();
+            margin: 40px auto;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid #3498DB;
+            background: #FFF;
+
+            color: #6A7C92;
+            font-size: 20px;
+            font-weight: 400;
+
+            &:hover {
+                background-color: #21638f;
+                color: #fff;
+                transition: 1s all;
+            }
+        }
+
+        @media screen and (max-width:573px) {
+            width: 100%;
+        }
+    }
+
+    .barra {
+        width: 3px;
+        height: 250px;
+        background-color: #3498DB;
+
+        @media screen and (max-width:573px) {
+            width: 80%;
+            height: 3px;
+            margin: 0 auto;
+        }
+    }
+
+    .box2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .custom-button {
+            .btn-icone();
+            margin: 40px auto;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid #3498DB;
+            background: #FFF;
+            color: #6A7C92;
+            font-size: 20px;
+            font-weight: 400;
+
+            &:hover {
+                background-color: #21638f;
+                color: #fff;
+                transition: 1s all;
+            }
+        }
+
+        @media screen and (max-width:573px) {
+            width: 100%;
+            padding: 20px 0;
+
+        }
+    }
+
+    @media screen and (max-width:573px) {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 // footer
 footer {
     width: 100%;
