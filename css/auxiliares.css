@@ -34,3 +34,6 @@ html body {
 .m1 {
   margin-top: 40px;
 }
+.m1 h1 {
+  color: red;
+}

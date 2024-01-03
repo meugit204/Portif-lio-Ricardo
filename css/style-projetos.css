@@ -41,6 +41,9 @@ html body {
 .m1 {
   margin-top: 40px;
 }
+.m1 h1 {
+  color: red;
+}
 body {
   background-color: #e6e6e6;
 }
@@ -192,8 +195,16 @@ header > .container .mobile a::after {
   line-height: normal;
   text-align: center;
 }
-@media screen and (max-width: 332px) {
+@media screen and (max-width: 440px) {
   .projetos .container .projetos__title h1 {
+    font-size: 2rem;
+  }
+}
+.projetos .container .projetos__title .size {
+  color: #000000;
+}
+@media screen and (max-width: 440px) {
+  .projetos .container .projetos__title .size {
     font-size: 2rem;
   }
 }
@@ -314,7 +325,8 @@ header > .container .mobile a::after {
   color: #ffffff;
   font-size: 15px;
   font-weight: normal;
-  padding: 20px 0;
+  padding: 20px 10px;
+  width: 100%;
   max-width: 500px;
 }
 @media screen and (max-width: 683px) {
@@ -324,7 +336,7 @@ header > .container .mobile a::after {
 }
 @media screen and (max-width: 683px) {
   .projetos .projeto__destaque .box2 {
-    width: 80%;
+    width: 100%;
   }
 }
 .projetos .projeto__destaque .box2 .box2__btn {

@@ -157,7 +157,15 @@ header>.container {
                 line-height: normal;
                 text-align: center;
 
-                @media screen and (max-width:332px) {
+                @media screen and (max-width:440px) {
+                    font-size: 2rem;
+                }
+            }
+
+            .size {
+                color: @text-cor-black;
+
+                @media screen and (max-width:440px) {
                     font-size: 2rem;
                 }
             }
@@ -291,7 +299,8 @@ header>.container {
                 color: @text-cor-white;
                 font-size: 15px;
                 font-weight: normal;
-                padding: 20px 0;
+                padding: 20px 10px;
+                width: 100%;
                 max-width: 500px;
 
                 @media screen and (max-width:683px) {
@@ -300,7 +309,7 @@ header>.container {
             }
 
             @media screen and (max-width:683px) {
-                width: 80%;
+                width: 100%;
             }
 
             .box2__btn {
