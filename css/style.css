@@ -76,6 +76,7 @@ header > .container .descktop a {
   line-height: normal;
   text-transform: uppercase;
   transition: all 0.5s;
+  z-index: 4;
 }
 header > .container .descktop a:hover {
   color: #0e76a8;
@@ -123,6 +124,7 @@ header > .container .mobile {
   flex-direction: column;
   align-items: center;
   display: none;
+  z-index: 4;
   padding: 20px 0;
   padding: 0;
 }
@@ -510,6 +512,7 @@ footer .container .menu-footer ul a {
   line-height: normal;
   text-transform: uppercase;
   transition: all 0.5s;
+  z-index: 4;
   font-weight: lighter;
 }
 footer .container .menu-footer ul a:hover {
