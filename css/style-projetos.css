@@ -5,6 +5,21 @@
   list-style: none;
   text-decoration: none;
 }
+* {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
 @font-face {
   font-family: 'Eczar';
   font-style: normal;
