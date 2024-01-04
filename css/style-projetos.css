@@ -367,7 +367,6 @@ header > .container .mobile a::after {
 .chamada {
   width: 100%;
   background-color: #fff;
-  height: 300px;
   display: flex;
   padding: 20px 0;
   margin-top: 40px;
@@ -402,8 +401,8 @@ header > .container .mobile a::after {
   display: block;
   border-radius: 20px;
   border: 1px solid #3498DB;
-  background: #FFF;
-  color: #6A7C92;
+  background: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
@@ -423,7 +422,7 @@ header > .container .mobile a::after {
 }
 .chamada .barra {
   width: 3px;
-  height: 250px;
+  height: 200px;
   background-color: #3498DB;
 }
 @media screen and (max-width: 573px) {
@@ -465,8 +464,8 @@ header > .container .mobile a::after {
   display: block;
   border-radius: 20px;
   border: 1px solid #3498DB;
-  background: #FFF;
-  color: #6A7C92;
+  background: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
@@ -488,7 +487,7 @@ header > .container .mobile a::after {
 @media screen and (max-width: 573px) {
   .chamada {
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 }
 footer {
