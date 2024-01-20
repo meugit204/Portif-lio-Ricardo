@@ -1,5 +1,6 @@
+LINK DO PROJETO DESENVOLVIDO: https://meugit204.github.io/Portifolio-Ricardo/
+
 # Título do Projeto: Meu Portifólio
-link: https://meugit204.github.io/Portifolio-Ricardo/
 
 ## Descrição do Projeto:
 Bem-vindo ao meu portfólio pessoal! Aqui, compartilho um pouco sobre quem sou, meus projetos e meu percurso no mundo do desenvolvimento web. Este projeto reflete meu atual nível de conhecimento em HTML, CSS, e JavaScript, demonstrando o que aprendi até o momento.
@@ -24,7 +25,7 @@ Este portfólio é o resultado do meu esforço e dedicação para desenvolver ha
 
 Obrigado por explorar meu portfólio!
 
-![Texto Alternativo](https://github.com/meugit204/imagens/blob/188dc8cb9bd1e36e57ffc08a888ab93f7d9fb67e/viaje-mais.png)
+![Texto Alternativo](https://github.com/meugit204/imagens/blob/09a1a4ff6f7069fe22ee5ded9b25bd69e3011f10/meu-portifolio.png)
  
 ## 🚀 Skills
 
