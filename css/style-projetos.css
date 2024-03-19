@@ -63,10 +63,10 @@ body {
   background-color: #e6e6e6;
 }
 header {
-  background-color: #2d2d2d;
+  background-color: #778899;
 }
 header > .container {
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +97,7 @@ header > .container .descktop a {
   z-index: 4;
 }
 header > .container .descktop a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   header > .container .descktop {
@@ -115,18 +115,6 @@ header > .container .header__icons i {
   color: #fff;
   cursor: pointer;
   display: block;
-}
-header > .container .header__icons .whatssap i {
-  color: #a4c639;
-}
-header > .container .header__icons .linkedin i {
-  color: #0e76a8;
-}
-header > .container .header__icons .github i {
-  color: #ffffff;
-}
-header > .container .header__icons .instagram i {
-  color: #c13584;
 }
 @media screen and (max-width: 914px) {
   header > .container .header__icons {
@@ -184,7 +172,7 @@ header > .container .mobile a {
   letter-spacing: 4px;
 }
 header > .container .mobile a::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 2px;
@@ -264,15 +252,17 @@ header > .container .mobile a::after {
   color: #6a7c92;
   font-size: 15px;
   font: lighter;
+  height: 210px;
+  overflow: hidden;
 }
 .projetos .container .meus-projetos .card__projetos .card__sobre a {
-  color: #6a7c92;
-  padding: 6px 10px;
+  color: #fff;
+  padding: 10px 20px;
   display: inline-block;
-  border: 1px solid #3498db;
   border-radius: 20px;
   margin: 20px 10px 0 0;
   font-size: 14px;
+  background-color: #21638f;
 }
 .projetos .container .meus-projetos .card__projetos .card__sobre a:hover {
   background-color: #3498db;
@@ -361,10 +351,10 @@ header > .container .mobile a::after {
   gap: 40px;
 }
 .projetos .projeto__destaque .box2 .box2__btn a {
-  color: #bccfe6;
-  padding: 6px 10px;
+  color: #fff;
+  padding: 10px 20px;
   display: inline-block;
-  border: 1px solid #3498db;
+  background-color: #21638f;
   border-radius: 20px;
   margin: 20px 0px 0 0;
   font-size: 14px;
@@ -383,7 +373,7 @@ header > .container .mobile a::after {
 }
 .chamada {
   width: 100%;
-  background-color: #fff;
+  background-color: #778899;
   display: flex;
   padding: 20px 0;
   margin-top: 40px;
@@ -396,7 +386,7 @@ header > .container .mobile a::after {
   align-items: center;
 }
 .chamada .box1 h2 {
-  color: #000;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -417,8 +407,7 @@ header > .container .mobile a::after {
   margin: 40px auto;
   display: block;
   border-radius: 20px;
-  border: 1px solid #3498DB;
-  background: #000;
+  background: #21638f;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -428,7 +417,7 @@ header > .container .mobile a::after {
   transition: 1s all;
 }
 .chamada .box1 .custom-button:hover {
-  background-color: #21638f;
+  background-color: #000;
   color: #fff;
   transition: 1s all;
 }
@@ -440,7 +429,7 @@ header > .container .mobile a::after {
 .chamada .barra {
   width: 3px;
   height: 200px;
-  background-color: #3498DB;
+  background-color: #21638f;
 }
 @media screen and (max-width: 573px) {
   .chamada .barra {
@@ -457,7 +446,7 @@ header > .container .mobile a::after {
   align-items: center;
 }
 .chamada .box2 h2 {
-  color: #000;
+  color: #fff;
   font-family: Open Sans;
   font-size: 20px;
   font-style: normal;
@@ -480,8 +469,7 @@ header > .container .mobile a::after {
   margin: 40px auto;
   display: block;
   border-radius: 20px;
-  border: 1px solid #3498DB;
-  background: #000;
+  background: #21638f;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -491,7 +479,7 @@ header > .container .mobile a::after {
   transition: 1s all;
 }
 .chamada .box2 .custom-button:hover {
-  background-color: #21638f;
+  background-color: #000;
   color: #fff;
   transition: 1s all;
 }
@@ -509,12 +497,12 @@ header > .container .mobile a::after {
 }
 footer {
   width: 100%;
-  background-color: #2d2d2d;
-  margin-top: 40px;
+  background-color: #778899;
+  border-top: 3px solid #fff;
 }
 footer .container {
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -572,18 +560,6 @@ footer .container .footer__icons .icons i {
   cursor: pointer;
   display: block;
 }
-footer .container .footer__icons .icons .whatssap i {
-  color: #a4c639;
-}
-footer .container .footer__icons .icons .linkedin i {
-  color: #0e76a8;
-}
-footer .container .footer__icons .icons .github i {
-  color: #ffffff;
-}
-footer .container .footer__icons .icons .instagram i {
-  color: #c13584;
-}
 @media screen and (max-width: 914px) {
   footer .container .footer__icons .icons {
     justify-content: flex-end;
@@ -625,7 +601,7 @@ footer .container .menu-footer ul a {
   font-weight: lighter;
 }
 footer .container .menu-footer ul a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   footer .container .menu-footer {
@@ -638,10 +614,14 @@ footer .container .menu-footer ul a:hover {
     padding-top: 10px;
   }
 }
+footer .footer__direitos {
+  background-color: #708090;
+}
 footer .footer__direitos .container {
+  background-color: #708090;
   display: flex;
   justify-content: center;
-  padding: 0px 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 footer .footer__direitos .container p {
   color: #ffffff;

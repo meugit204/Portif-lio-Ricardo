@@ -60,10 +60,10 @@ html body {
   color: red;
 }
 header {
-  background-color: #2d2d2d;
+  background-color: #778899;
 }
 header > .container {
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,17 +73,16 @@ header > .container .logo a {
   font-size: 2rem;
   font-family: 'Eczar', serif;
   font-weight: bold;
-  color: #fff;
   letter-spacing: 5px;
   line-height: 1;
   text-align: center;
+  color: #fff;
 }
 header > .container .descktop ul {
   display: flex;
   gap: 5rem;
 }
 header > .container .descktop a {
-  color: #fff;
   font-family: Open Sans;
   font-size: 1rem;
   font-style: normal;
@@ -92,9 +91,10 @@ header > .container .descktop a {
   text-transform: uppercase;
   transition: all 0.5s;
   z-index: 4;
+  color: #fff;
 }
 header > .container .descktop a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   header > .container .descktop {
@@ -112,18 +112,6 @@ header > .container .header__icons i {
   color: #fff;
   cursor: pointer;
   display: block;
-}
-header > .container .header__icons .whatssap i {
-  color: #a4c639;
-}
-header > .container .header__icons .linkedin i {
-  color: #0e76a8;
-}
-header > .container .header__icons .github i {
-  color: #ffffff;
-}
-header > .container .header__icons .instagram i {
-  color: #c13584;
 }
 @media screen and (max-width: 914px) {
   header > .container .header__icons {
@@ -168,7 +156,7 @@ header > .container .mobile ul {
   width: 100%;
   padding: 40px 0 40px 0;
   top: 84px;
-  background-color: #fff;
+  background-color: #778899;
   display: none;
   text-align: center;
   border-bottom: 2px solid #ccc;
@@ -177,15 +165,15 @@ header > .container .mobile li {
   margin-bottom: 30px;
 }
 header > .container .mobile a {
-  color: #000000;
+  color: #fff;
   letter-spacing: 4px;
 }
 header > .container .mobile a::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 2px;
-  background-color: #21638f;
+  background-color: #000;
   margin: 0 auto;
 }
 @media screen and (max-width: 914px) {
@@ -201,7 +189,7 @@ header > .container .mobile a::after {
 .perfil .container {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .perfil .container .perfil__box1 {
   width: 50%;
@@ -228,19 +216,19 @@ header > .container .mobile a::after {
   height: 100%;
 }
 .perfil .container .perfil__box2 .perfil__title p {
-  color: #000000;
+  color: #918f8f;
   font-size: 1rem;
   font-weight: lighter;
 }
 .perfil .container .perfil__box2 h1 {
-  color: #000000;
+  color: #918f8f;
   font-size: 1rem;
   font-style: normal;
   letter-spacing: 1rem;
   line-height: 2;
 }
 .perfil .container .perfil__box2 h1 b {
-  color: #f6b40d;
+  color: #6886a3;
   font-size: 5rem;
   font-style: normal;
   font-weight: 700;
@@ -272,7 +260,7 @@ header > .container .mobile a::after {
   }
 }
 .perfil .container .perfil__box2 .dev {
-  color: #6e6e6e;
+  color: #918f8f;
   font-size: 2rem;
   padding-right: 1%;
 }
@@ -283,7 +271,7 @@ header > .container .mobile a::after {
 }
 .perfil .container .perfil__box2 .dev .cursor {
   display: inline-block;
-  border-left: 4px solid #f6b40d;
+  border-left: 4px solid #778899;
   height: 0.9em;
   margin-bottom: -0.1em;
   margin-left: 5px;
@@ -292,7 +280,7 @@ header > .container .mobile a::after {
 .perfil .container .perfil__box2 .dev .typing-text {
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 4s steps(90);
+  animation: typing 5s steps(100) infinite;
 }
 @keyframes typing {
   from {
@@ -349,34 +337,24 @@ header > .container .mobile a::after {
 .perfil .container .perfil__btn .custom-button {
   display: inline-block;
   text-decoration: none;
-  width: 180px;
-  height: 45px;
-  line-height: 45px;
+  width: 190px;
+  height: 55px;
+  line-height: 55px;
   text-align: center;
-  background-color: #3498db;
+  background-color: #21638f;
   font-size: 1rem;
   color: #ffffff;
   border-radius: 5px;
   overflow: hidden;
+  border-bottom: 4px solid #49535e;
 }
 .perfil .container .perfil__btn .custom-button:hover {
-  background-color: #21638f;
+  background-color: #49535e;
   transition: 1s all;
 }
 @media screen and (max-width: 458px) {
   .perfil .container .perfil__btn .custom-button {
-    width: 160px;
-  }
-}
-@media screen and (max-width: 394px) {
-  .perfil .container .perfil__btn .custom-button {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 326px) {
-  .perfil .container .perfil__btn .custom-button {
-    width: 130px;
-    font-size: 0.8rem;
+    width: 250px;
   }
 }
 .perfil .container .perfil__btn .custom-button i {
@@ -388,11 +366,8 @@ header > .container .mobile a::after {
   .perfil .container .perfil__btn {
     gap: 2rem;
     justify-content: center;
-  }
-}
-@media screen and (max-width: 394px) {
-  .perfil .container .perfil__btn {
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 914px) {
@@ -402,7 +377,7 @@ header > .container .mobile a::after {
   }
 }
 .linguagens {
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 0 1%;
 }
 .linguagens p {
@@ -415,12 +390,12 @@ header > .container .mobile a::after {
 }
 footer {
   width: 100%;
-  background-color: #2d2d2d;
-  margin-top: 40px;
+  background-color: #778899;
+  margin-top: 80px;
 }
 footer .container {
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -432,10 +407,10 @@ footer .container .logo a {
   font-size: 2rem;
   font-family: 'Eczar', serif;
   font-weight: bold;
-  color: #fff;
   letter-spacing: 5px;
   line-height: 1;
   text-align: center;
+  color: #fff;
 }
 @media screen and (max-width: 914px) {
   footer .container .logo {
@@ -471,24 +446,12 @@ footer .container .footer__icons .icons {
   padding-top: 10px;
 }
 footer .container .footer__icons .icons i {
-  font-size: 30px;
+  font-size: 25px;
   height: 30px;
   flex-shrink: 0;
   color: #fff;
   cursor: pointer;
   display: block;
-}
-footer .container .footer__icons .icons .whatssap i {
-  color: #a4c639;
-}
-footer .container .footer__icons .icons .linkedin i {
-  color: #0e76a8;
-}
-footer .container .footer__icons .icons .github i {
-  color: #ffffff;
-}
-footer .container .footer__icons .icons .instagram i {
-  color: #c13584;
 }
 @media screen and (max-width: 914px) {
   footer .container .footer__icons .icons {
@@ -505,7 +468,7 @@ footer .container .menu-footer {
   width: 33.3%;
 }
 footer .container .menu-footer h2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
   text-align: right;
 }
@@ -519,7 +482,6 @@ footer .container .menu-footer ul li {
   padding-bottom: 10px;
 }
 footer .container .menu-footer ul a {
-  color: #fff;
   font-family: Open Sans;
   font-size: 1rem;
   font-style: normal;
@@ -529,9 +491,10 @@ footer .container .menu-footer ul a {
   transition: all 0.5s;
   z-index: 4;
   font-weight: lighter;
+  color: #fff;
 }
 footer .container .menu-footer ul a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   footer .container .menu-footer {
@@ -544,13 +507,17 @@ footer .container .menu-footer ul a:hover {
     padding-top: 10px;
   }
 }
+footer .footer__direitos {
+  background-color: #708090;
+}
 footer .footer__direitos .container {
   display: flex;
   justify-content: center;
-  padding: 0px 0 10px 0;
+  padding: 5px 0 5px 0;
+  background-color: #708090;
 }
 footer .footer__direitos .container p {
-  color: #ffffff;
+  color: #fff;
 }
 @media screen and (max-width: 914px) {
   footer .footer__direitos .container p {

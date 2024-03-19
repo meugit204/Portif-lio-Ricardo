@@ -60,10 +60,10 @@ html body {
   color: red;
 }
 header {
-  background-color: #2d2d2d;
+  background-color: #778899;
 }
 header > .container {
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +94,7 @@ header > .container .descktop a {
   z-index: 4;
 }
 header > .container .descktop a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   header > .container .descktop {
@@ -112,18 +112,6 @@ header > .container .header__icons i {
   color: #fff;
   cursor: pointer;
   display: block;
-}
-header > .container .header__icons .whatssap i {
-  color: #a4c639;
-}
-header > .container .header__icons .linkedin i {
-  color: #0e76a8;
-}
-header > .container .header__icons .github i {
-  color: #ffffff;
-}
-header > .container .header__icons .instagram i {
-  color: #c13584;
 }
 @media screen and (max-width: 914px) {
   header > .container .header__icons {
@@ -338,11 +326,11 @@ header > .container .mobile a::after {
 }
 footer {
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #778899;
 }
 footer .container {
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #778899;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -400,18 +388,6 @@ footer .container .footer__icons .icons i {
   cursor: pointer;
   display: block;
 }
-footer .container .footer__icons .icons .whatssap i {
-  color: #a4c639;
-}
-footer .container .footer__icons .icons .linkedin i {
-  color: #0e76a8;
-}
-footer .container .footer__icons .icons .github i {
-  color: #ffffff;
-}
-footer .container .footer__icons .icons .instagram i {
-  color: #c13584;
-}
 @media screen and (max-width: 914px) {
   footer .container .footer__icons .icons {
     justify-content: flex-end;
@@ -453,7 +429,7 @@ footer .container .menu-footer ul a {
   font-weight: lighter;
 }
 footer .container .menu-footer ul a:hover {
-  color: #0e76a8;
+  color: #000;
 }
 @media screen and (max-width: 914px) {
   footer .container .menu-footer {
@@ -466,10 +442,14 @@ footer .container .menu-footer ul a:hover {
     padding-top: 10px;
   }
 }
+footer .footer__direitos {
+  background-color: #708090;
+}
 footer .footer__direitos .container {
   display: flex;
   justify-content: center;
-  padding: 0px 0 10px 0;
+  padding: 10px 0 10px 0;
+  background-color: #708090;
 }
 footer .footer__direitos .container p {
   color: #ffffff;
